@@ -1,0 +1,6 @@
+<div class="leftblock" id="buncefield">
+	<img src="images/buncefield.jpg" />
+	<h2>Envirochem managed the asbestos removal at the very high profile incident within the Buncefield Terminal</h2>
+	<p>In December '05 a fault at the <a href="http://en.wikipedia.org/wiki/Buncefield_fire" target="_blank">Buncefield Terminal, Hemel Hemstead</a>, resulted in an inferno which gutted the site. Envirochem were called in to assess and carry out environmental clean up works of asbestos and chemical fallout. Our advice ensured that emergency repair works to the fuel terminal were not delayed during the reconstruction and rebuilding of the project.</p>
+	<p>Site still ablaze, a team of consultants from Envirochem attended site for initial assessment. We completed a review and risk assessment of the site before starting an immediate comprehensive cleanup operation. Envirochem worked closely with the Health And Safety Executive to ensure that the clients <a href="http://www.bpa.co.uk/" target="_blank">British Pipeline</a> and <a href="http://www.bp.com/" target="_blank">British Petroleum</a> could safely reopen the depot and start rebuilding the damaged pipelines and buildings. Envirochem completed a comprehensive review of the environmental disaster and its impact on the rebuilding work.</p>
+</div>

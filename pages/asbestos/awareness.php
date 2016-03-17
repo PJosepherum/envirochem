@@ -1,0 +1,6 @@
+<div class="leftblock">
+    <h2>Under the Control of Asbestos Regulations (2012), all employees whose work could foreseeably expose them to asbestos must be provided with asbestos awareness training</h2>
+    <p>In particular, awareness training should be given to all demolition workers and those in the refurbishment, maintenance and similar trades where it is foreseeable that their work will disturb the structure of the building, due to the possibility of discovery and disturbance of potential asbestos containing materials.</p>
+    <p>Envirochem can provide awareness courses at our premises in Fareham, or at a suitable venue supplied by the client. Our courses are compliant with Regulation 10 of the Control of Asbestos Regulations (2012), and can include additional site-specific information if required.</p>
+    <p>Previous clients have included <a href="http://www.wates.co.uk/our-businesses/wates-construction" target="_blank">Wates Construction</a>, <a href="http://www.fasset.co.uk/" target="_blank">Fasset Property and Business Solutions</a>, Holmes of Southampton and <a href="http://www.wessexdemolition.co.uk/" target="_blank">Wessex Demolition</a>.</p>
+</div>

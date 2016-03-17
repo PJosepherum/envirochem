@@ -1,0 +1,734 @@
+*	{ /* Blank canvas */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+html    {
+    height: 100%;
+    width: 100%;
+    }
+body	{ /* Page background */
+	text-align: center;
+	font-family: 'PT Sans', arial, serif;
+    height: 100%;
+    width: 100%;
+    background: #544932;
+	}
+	
+div#frame	{ /* Main frame (white surround) */
+    background:  url('sky.jpg') #a2ddfb bottom no-repeat;
+    height: auto;
+    min-height: 85%; 
+	}
+div#container	{ /* Inner frame (black border) */
+    width: 850px;
+    margin: 0 auto;
+	text-align: justify;
+    overflow: hidden;
+	}
+
+/* This is the header section. It includes the logo (left) and floating tagline (right) */
+div#header	{
+	clear: both;
+	overflow: hidden;
+	text-align: left;
+	margin: 20px auto;
+    width: 850px;
+	}
+	div#header img	{  
+		}
+	div#header h2	{
+	    font-size: 1.75em;
+	    font-family: 'Maven Pro', arial, serif;
+	    color: #449E52;
+	    font-weight: normal;
+        padding-left: 50px; 
+		}
+    div#header a#contactUs {
+        float: right;
+        margin-right: 80px;
+        margin-top: 80px;
+        font-family: 'PT Sans Caption', arial, serif;
+        padding: 5px;
+        font-size: 2em;
+        text-decoration: none; 
+        color: #000;
+        /*background:  #544932;
+        border: solid 4px #3D2D0B;
+        border-radius: 15px;
+        color: #fff;
+        font-size: 1.25em;
+        width: 120px;
+        text-align: center;*/
+        }
+    div#header a#contactUs:hover {
+            color: #449E52;
+        }
+    
+    /* Navigation menu */	
+div#navigation	{
+	clear: both;
+	overflow: hidden;
+	font-family: 'PT Sans Caption', arial, serif;
+	width: auto;
+	}
+	div#navigation ul.navbar li.navitem	{
+		list-style: none;
+		float: left;
+		padding-right: 2px;
+		border-right: 3px solid #000;
+		border-top: 3px solid #000;
+		background: url(menu-bg.png) top right no-repeat #4F9C4F;
+	}
+	div#navigation ul.navbar li#closed	{
+		background-color: #ccc;
+		}
+	div#navigation ul.navbar li.navitem:first-child	{
+		border-left: 3px solid #000;
+        border-top-left-radius: 10px;
+		}
+	div#navigation ul.navbar li.navitem:last-child	{
+		border-top-right-radius: 10px;
+		}
+		div#navigation ul.navbar li.navitem a	{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			font-size: .9em;
+			padding: 5px 10px;
+			}
+		div#navigation ul.navbar li#active	{
+			background: url(menu-bg.png) top right no-repeat #000;
+			}
+		div#navigation ul.navbar li#active a	{
+			font-weight: bold;
+			}
+		div#navigation ul.navbar li.navitem:hover	{
+			background:url(menu-active.png) top right no-repeat #4F9C4F;
+			}
+			div#navigation ul.navbar li.navitem a span.darr	{
+				color: #080;
+				font-size: .8em;
+				}
+	div#navigation ul.menu	{
+		display: none;
+		position: absolute;
+		float: left;
+		background: #0c0c0c;
+		border: 3px solid #080;
+        border-top: none;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		-moz-box-shadow: 0 5px 10px 0 #000;
+		-webkit-box-shadow: 0 5px 10px 0 #000;
+		box-shadow: 0 5px 10px 0 #000;
+        z-index:10;
+        padding: 5px;
+		}
+	div#navigation ul.navbar li:hover ul.menu	{
+		display: block;
+		}
+	div#navigation ul.navbar li ul.menu li	{
+		float: left;
+		clear: left;        
+		width: 250px; 
+        text-align: left;
+        padding: 5px;
+        list-style: none;
+		}     
+    div#navigation ul.navbar li ul.menu li.menuheader    {
+        background: #8a8;
+        }
+	div#navigation ul.navbar li ul.menu li a	{
+        font-size: 0.8em;
+        font-family: 'PT Sans Caption', arial, serif;
+        font-weight: normal !important;  
+		background: none;
+    }
+    div#navigation ul.navbar li ul.menu li.menuheader a    { 
+        color: #000;
+        font-size: 1em;
+		}
+	div#navigation ul.navbar li ul.menu a:hover	{
+		color: #8a8; 
+		}
+	
+/* Content frame for everything beneath navigation */
+div#content	{
+	padding: 10px;
+	overflow: hidden;
+	color: #041;
+	background: url('ie-content-bg.png') repeat-x;
+	border-top: 2px solid #000;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	}
+/*div#content.chemicals	{
+	background: url('ie-content-bg.png') repeat-x #99c8cc;
+	}
+div#content.microbiology	{
+	background: url('ie-content-bg.png') repeat-x #c2cc99;
+	} */
+	
+div#content div.fullblock,
+div#content div.leftblock,
+div#content div.rightblock,
+div#content div.altrightblock	{
+	background: #fff;
+	margin-bottom: 10px;
+	-moz-box-shadow: 0 5px 10px 0 #000;
+	-webkit-box-shadow: 0 5px 10px 0 #000;
+	box-shadow: 0 5px 10px 0 #000;
+	border: 1px solid #fff;
+	overflow: hidden;
+	color: #000;
+	/*border-top-right-radius: 10px;
+	border-top-left-radius: 10px;*/
+    border-radius: 10px;
+	}
+div#content div.columnblock {
+    }
+div#content div.columnblock div {
+    -moz-box-shadow: 0 5px 10px 0 #000;
+    -webkit-box-shadow: 0 5px 10px 0 #000;
+    box-shadow: 0 5px 10px 0 #000;
+    border: 1px solid #fff;
+    overflow: hidden;
+    color: #000;
+    border-radius: 10px;
+    background: #fff;
+    float: left;
+    width: 154px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 140px;   
+    }
+div#content div.columnblock div#asbestos    {
+    background: red;
+    }
+div#content div.columnblock div#chemicals    {
+    background: orange;
+    }
+div#content div.columnblock div#occupational-hygiene    {
+    background: green;
+    }
+div#content div.columnblock div#environmental-monitoring    {
+    background: blue;
+    }
+div#content div.columnblock div#training    {
+    background: purple;
+    }
+       
+div#content div.columnblock h3    {
+    margin: 5px 0;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-size: .8em;
+    text-align: center;
+    background: #fff;
+}
+div#content div.columnblock ul.magiclist    {
+    list-style: none;
+    margin: 5px 10px;
+    text-align: left;
+    font-size: 0.8em;
+    height: 65px;
+    }
+div#content div.columnblock ul.magiclist li a    {
+    color: #fff;
+    }
+div#content div.columnblock ul.magiclist li a:hover    {
+    font-weight: bold;;
+    }
+div#content div.columnblock a.moreinfo    {
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    }
+
+
+div#content div.fullblock	{
+	clear: both;
+	}
+div#content div.leftblock	{
+	clear: left;
+	}
+div#content div.rightblock	{
+	width: 250px;
+	float: right;
+	clear: right;
+	margin-left: 10px;
+}
+div#content div.altrightblock	{
+	background: #C5D6BF;
+	width: 250px;
+	float: right;
+	clear: right;
+	margin-left: 10px;
+	border: 1px solid #060;
+	}
+
+	div#content div.rightblock ul.departments	{
+		border: 1px solid #fff;
+		border-top: 0;
+		}
+		div#content div.rightblock ul.departments li	{
+			width: 242px;
+			list-style: none;
+			text-align: left;
+			padding: 15px 10px;
+            border-top: 1px solid #fff;
+			}
+		div#content div.rightblock ul.departments li a	{
+			padding: 0 10px;
+			text-decoration: none;
+			font-family: 'PT Sans Caption', arial, serif;
+			font-size: 2em;
+			}
+		div#content div.rightblock ul.departments li a:hover	{
+			color: #fff !important;
+			}
+		
+		div#content div.rightblock ul.departments li.asbestos	{
+			background: url('asbestos-fibers.png') top left;
+			border-left: 6px solid #99CC99;
+			}
+			div#content div.rightblock ul.departments li.asbestos a	{
+				color: #99CC99;
+			}
+		div#content div.rightblock ul.departments li.chemicals	{
+			background: url('chemicals.jpg') top left;
+			border-left: 6px solid #99c8cc;
+		}
+			div#content div.rightblock ul.departments li.chemicals a	{
+				color: #99c8cc;
+			}
+		div#content div.rightblock ul.departments li.microbiology	{
+			background: url('microbiology.jpg') top right;
+			border-left: 6px solid #c2cc99;
+			}
+			div#content div.rightblock ul.departments li.microbiology a	{
+				color: #c2cc99;
+			}
+
+/* Elements global to #content */
+div#content h1	{
+	background: url('h2-bg.jpg') repeat-x;
+	font-size: 1.3em;
+	padding: 0 5px;
+	color: #000;
+	font-family: 'PT Sans Narrow', arial, serif;
+	font-weight: bold;
+	border: 1px solid #fff;
+	border-bottom: 0;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	}
+div#content h2	{
+	font-family: 'PT Sans Narrow', arial, serif;
+    text-align: left;
+	font-size: 1.1em;
+	margin: 10px;
+	padding-bottom: 5px;
+	color: #041;
+	border-bottom: 3px solid #080;
+	}
+div#content h3	{
+	font-family: 'PT Sans Caption', arial, serif;
+	font-size: 0.9em;
+	color: #000;
+	margin: 10px 15px;
+	}
+div#content h3.warning    {  
+    font-family: 'PT Sans Caption', arial, serif;
+    font-size: 1em;
+    color: #f00;
+    margin: 10px 15px;
+    text-align: center;
+    }
+div#content p	{
+    font-family: 'PT Sans', arial, serif; 
+	font-size: 0.9em;
+	margin: 10px 15px;
+	}
+div#content a	{
+	color: #484;
+	text-decoration: underline;
+}
+div#content a:hover	{
+	color: #8a8;
+    
+}
+
+div#formError   {
+        background: #c44 !important;
+        display: none;
+    }
+div#formError p   {
+        color: #fff;
+        font-family: "PT Sans Narrow", Arial, sans-serif;
+    }
+
+div#content div.marqueeblock {
+    background: #544932;
+    width: 246px;
+    float: right;
+    clear: right;
+    margin-left: 10px;
+    border: 3px solid #3D2D0B;
+    margin-bottom: 10px;
+    -moz-box-shadow: 0 5px 10px 0 #000;
+    -webkit-box-shadow: 0 5px 10px 0 #000;
+    box-shadow: 0 5px 10px 0 #000;
+    overflow: hidden;
+    border-radius: 10px;
+    clear: both;
+} 
+
+div#content div.marquee {
+   position:relative;
+   width:auto;
+   height: 30px;
+   display:block;
+   overflow:hidden;
+   margin: 5px 5px;
+   margin-bottom: 0;
+}
+div#content div.marquee a {  
+    position:absolute;
+    white-space:nowrap;
+    font-family: 'PT Sans Caption', arial, serif;
+    font-size: 1.25em;
+    color: #ddd;
+}
+div#content div.marquee a:hover {
+color: #DBC086;
+}
+
+/* Lists and such within #content */
+div#content ul.list	{
+	list-style-position: inside;
+    list-style-type: circle;
+	margin: 10px 15px;
+	text-align: left;
+	font-size: 0.9em;
+	}
+div#content ul.list li#active a	{
+	font-weight: bold;
+	color: #000;
+	}
+div#content ul.nobullets,
+div#content ul.pricelist	{
+	list-style: none;
+	margin: 10px 15px;;
+	text-align: left;
+	font-size: 0.9em;
+    text-align: left; 
+	}
+	
+div#content ul.servicelist	{
+	list-style-position: inside;
+    list-style-type: circle;
+	margin: 10px 15px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 1em;
+    clear: right;
+	}
+div#content ul.servicelist a    {
+    text-decoration: none;
+    }
+div#content ul.servicelist li ul.sublist	{
+		margin: 5px 0;
+		margin-left: 20px;
+	}
+div#content ul.servicelist li.active    {
+    list-style-type: disc;
+    }
+div#content ul.servicelist li.active a	{
+	color: #000;
+	font-weight: bold;
+	}
+div#content ul.servicelist li.active ul.sublist li a	{
+	color: #666;
+	font-weight: normal;
+	}
+    
+div#content ul.ukas	{
+	text-align: center;
+	margin: 10px;
+    margin-left: 15px;
+	float: right;
+    display: inline;
+	}
+div#content ul.logos    {
+    text-align: center;
+    margin: 10px auto;
+    }
+div#content ul.logos li    {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    }
+div#content ul.mcerts    {
+    text-align: center;
+    margin: 0 10px;
+    float: left;
+    }
+div#content ul.ukas li,
+div#content ul.mcerts li	{
+	list-style: none;
+	display: inline;
+	margin-right: 2px;
+	}
+div#content ul.logos li:last-child	{
+	padding-right: 0;
+	}
+div#content div.slideshow   {
+    width: 100%;
+    }
+div#content ul.slideshowlist    {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ddd;
+    }
+div#content ul.slideshowlist li {
+    display: inline;
+    list-style: none;
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+    font-family: 'PT Sans Caption', arial, serif; 
+    }
+div#content ul.slideshowlist li a {
+    color: #aaa;
+    }
+div#content ul.slideshowlist li.activeLI {
+    color: #888;
+    font-weight: bold;
+    background: #f0f0f0;
+    border-top: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+    } 
+div#content div.clientcycle {
+    margin: 20px 0;
+    margin-left: 20px; 
+    }
+
+li.pdf  {
+    list-style-image: url('pdf.gif');
+    list-style-position: inside;
+    padding: 0 5px;
+    }
+	
+/* Forms man */
+div#content form	{
+	overflow: hidden;
+	}
+div#content form legend	{
+	width: 100%;
+	}
+div#content form div.field,
+div#content form div.control	{
+	clear: both;
+	margin: 0 auto;
+	width: 80%;
+	overflow: hidden;
+	border-bottom: 2px solid #ddd;
+	}
+div#content form div.field:hover	{
+	border-bottom: 2px dotted #ddd;
+	}
+div#content form div.field label	{
+	font-family: 'PT Sans Caption', arial, serif;
+	font-size: 0.9em;
+	color: #000;
+	margin-right: 20px;
+	text-align: right;
+	float: right;
+	padding: 10px 0 5px 0;
+	}
+div#content form div.field input,
+div#content form div.field select	{                          
+	font-family: 'PT Sans', arial, serif;
+	font-size: 0.9em;
+	color: #000;
+	float: right;
+	width: 300px;
+	margin: 10px 0 5px 0;
+	}
+div#content form div.control	{
+	border: 0;
+	}
+div#content form div.control input.submit	{
+	font-family: 'PT Sans Caption', arial, serif;
+	font-size: 0.9em;
+	color: #000;
+	background: #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 5px solid #ccc;
+	border-top: 5px solid #ccc;
+	padding: 5px;
+	margin-bottom: 5px;
+	float: right;
+	}
+div#content form div.control input.button:hover	{
+	border-bottom: 5px solid #080;
+	border-top: 5px solid #080;
+	}
+div#content form div.control textarea	{
+	font-family: 'PT Sans', arial, serif;
+	font-size: 0.9em;
+	color: #000;
+	padding: 5px;
+	margin: 10px 0;
+	width: 425px;
+	float: right;
+	height: 150px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 5px solid #ddd;
+	border-top: 5px solid #ddd;
+	} 
+    
+div#content #messageSuccess {
+    text-align: left;
+    margin: 10px 15px;
+    }
+div#content #messageSuccess td {
+    padding: 5px 10px;
+    }
+
+    
+div#content img.floatright	{
+	float: right;
+	clear: right;
+	margin: 10px;
+	margin-left: 20px;
+	}
+div#content img.floatleft    {
+    float: left;
+    clear: left;
+    margin: 10px;
+    margin-right: 20px;
+    }
+div#content img.borderright    {
+    float: right;
+    clear: right;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    background: #fff;
+    }
+div#content img.center  {
+    width: 100%;
+}
+div#content img.googlemap   {
+    border: 3px solid #080;
+    float: left;
+    clear: left;
+    margin: 10px 10px;
+}
+div#content div.leftcolumn	{
+	width: 45%;
+	padding-left: 15px;
+	}
+div#content div.rightcolumn	{
+	width: 45%;
+	float: right;
+    clear: right;
+	padding-right: 15px;
+	}
+	
+div#map_hampshire,
+div#map_bristol	{
+	margin: 0;
+	height: 400px;
+	clear: both;
+	}
+div#map_hampshire ul li,
+div#map_bristol ul li	{
+	list-style: none;
+	}
+	
+/* News stuff */
+div#content div.newsfooter	{
+	overflow: hidden;
+	margin: 10px;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	clear: both;
+	font-family: 'PT Sans Narrow', arial, serif;
+	}
+div#content ul.newsright	{
+	float: right;
+	}
+
+div#content ul.newsright li,
+div#content ul.newsleft li	{
+	display: inline;
+    padding: 5px;
+	}
+	
+div#footer	{
+	clear: both;
+	text-align: justify;
+	overflow: hidden;
+    background: #544932;
+    border-top: 4px solid #3D2D0B;
+    padding: 10px 0;
+
+	}
+div#footer div.footerblock	{
+	width: 840px;
+	margin: 0 auto;
+	}
+div#footer ul#left	{
+	border-right: 1px dotted #ddd;
+	text-align: right;
+	}
+div#footer ul#right	{
+	float: right;
+	}
+div#footer ul.block	{
+	display: block;
+	float: left;
+	padding: 0 20px;
+	font-family: 'PT Sans Narrow', arial, serif;
+	color: #ddd;
+	}
+div#footer ul.block li	{
+	list-style-position: outside;
+	list-style-type: none;
+	}
+div#footer ul.block li:hover	{
+	list-style-type: square;
+	}
+div#footer ul.block li a	{
+	color: #ddd;
+	text-decoration: underline;
+	}
+div#footer ul.block li a:hover	{
+	color: #DBC086;
+}
+div#footer ul.block a.copyright	{
+	color: #8C8472;
+	text-decoration: none;
+	}
+div#footer ul.block a.copyright:hover	{
+	color: #4cf;
+	}
+.bold	{
+	font-weight: bold;
+	}
+.red	{
+	color: #f00 !important;
+	}
+.clear	{
+	clear: both;
+}
